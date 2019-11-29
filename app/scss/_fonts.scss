@@ -1,0 +1,45 @@
+@font-face{
+    font-family: 'Quicksand' sans-serif;
+    src: url('../fonts/quicksand-regular.woff2') format('.woff2'),
+        url('../fonts/quicksand-regular.woff2') format('.woff');
+    font-weight: 400;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?gujcbi');
+  src:  url('../fonts/icomoon.eot?gujcbi#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gujcbi') format('truetype'),
+    url('../fonts/icomoon.woff?gujcbi') format('woff'),
+    url('../fonts/icomoon.svg?gujcbi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-bell:before {
+  content: "\e951";
+}
+.icon-search:before {
+  content: "\e986";
+}

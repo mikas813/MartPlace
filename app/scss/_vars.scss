@@ -1,0 +1,33 @@
+//fonts
+$main-font: 'Quicksand' sans-serif;
+
+//buttons
+$main-btn-color: #0674ec;
+
+//font color
+$main-font-color: #555555;
+$footer-font-color: #ababab;
+$main-title-color: #000000;
+$header-menu-fc: #303030;
+
+//font size
+$main-font-size: 1em;
+
+
+
+//Background-color
+$main-bgc: #eef1f3; //used for 'header, some contaners,
+$secondary-bgc: #ffffff;
+$search-sect-bgc: #0674ec;
+$footer-bgc: #262b30;
+$copy-bgc: #192027;
+
+//mixins
+    //color gradient for slider and baner
+@mixin color-gradient { 
+    background-image: -moz-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    opacity: 0.902; 
+}
+
