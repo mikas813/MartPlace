@@ -1,0 +1,25 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+
+}
+.container{
+    background-color: #fff;
+}
