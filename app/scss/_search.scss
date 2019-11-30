@@ -1,0 +1,73 @@
+.search {
+    .container {
+        position: relative;
+        .search__inner {
+            background-color: #fff;
+                padding: 40px;
+                border-radius: 10px;
+                position: absolute;
+                width: 100%;
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+                top: -67px;
+                &::before,
+                &::after{
+                    content: '';
+                    border-radius: 10px;
+                    background-color: #fff;
+                    opacity: .5;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &::before{
+                    content: '';
+                    width: 1110px;
+                    height: 25px;
+                    top: -15px;
+                    width: 1110px;
+                }
+                &::after{
+                    content: '';
+                    top: -30px;
+                    width: 1080px;
+                    height: 40px;
+                }
+            form{
+                input{
+                    max-width: 615px;
+                    width: 100%;
+                    height: 55px;
+                    border: 1px solid #dcdcdc;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    padding: 25px 20px;
+                }
+                select{
+                    max-width: 195px;
+                    width: 100%;
+                    height: 55px;
+                    padding: 15px 20px;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 0;
+                    -webkit-appearance: none;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    margin-left: -5px;
+                    background-image: url(../images/chevron-down.png);
+                    background-repeat: no-repeat;
+                    background-position: 160px 23px;
+                    color: $main-font-color;
+                }
+                button{
+                    max-width: 220px;
+                    width: 100%;
+                    height: 55px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    margin-left: 30px;
+                }
+            }
+        }   
+    }
+}
+
