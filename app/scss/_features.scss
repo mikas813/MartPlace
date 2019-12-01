@@ -1,0 +1,29 @@
+.features__inner {
+    padding: 185px 0px 120px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .features__item {
+        max-width: 360px;
+        width: 100%;
+        min-height: 400px;
+        img{
+            padding: 40px 0px 30px;
+        }
+        &-title{
+            font-size: 24px;
+            color: #010101;
+            font-weight: 200;
+            padding-bottom: 25px;
+        }
+        &-text{
+            line-height: 32px;
+            padding: 0px 30px 50px;
+        }
+    }
+    .middle{
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+
+    }
+}
