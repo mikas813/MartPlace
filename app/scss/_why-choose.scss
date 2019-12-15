@@ -1,0 +1,100 @@
+.why__choose-info{
+    text-align: center;
+    margin-top: 100px;
+    .wc-title{
+        font-size: 36px;
+        line-height: 72px;
+        margin: 0;
+        color: #000;
+        font-weight: 400;
+        span{
+            color: #0674ec;
+        }
+    }
+    .wc-text{
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 30px;
+    }
+}
+.wc__items-inner {
+    padding: 50px 0px 120px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    .wc__item{
+        margin-bottom: 30px;
+        max-width: 360px;
+        width: 100%;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        min-height: 370px;
+        border-radius: 4px;
+        position: relative;
+        span{
+            position: absolute;
+            font-size: 48px;
+            color: #5c87f8;
+            font-weight: 300;
+            opacity: .2;
+            left: 20px;
+            top: 20px;
+        }
+        &-title{
+            font-size: 24px;
+            color: #010101;
+            font-weight: 200;
+            padding-top: 135px;
+            position: relative;
+            &::before{
+                position: absolute;
+                font-family: 'Linearicons-Free';
+                transform: translateX(-50%);
+                font-size: 60px;
+                top: 32px;
+                left: 50%;
+            }
+        }
+        .license{
+            &::before{
+                content: "\e822";
+                color: #0674ec;
+            }
+        }
+        .magic-wand{
+            &::before{
+                content: "\e803";
+                color: #7f4ec2;
+            }
+        }
+        .lock{
+            &::before{
+                content: "\e80f";
+                color: #77de51;
+            }
+        }
+        .chart-bars{
+            &::before{
+                content: "\e843";
+                color: #feb71d;
+            }
+        }
+        .leaf{
+            &::before{
+                content: "\e849";
+                color: #58c9e9;
+            }
+        }
+        .phone{
+            &::before{
+                content: "\e831";
+                color: #ff6a6d;
+            }
+        }
+        &-text{
+            line-height: 32px;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+    }
+}

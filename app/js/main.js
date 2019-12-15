@@ -19,7 +19,7 @@ $(function () {
     autoplaySpeed: 3000
 
   });
-
+//s items main page slider
   $('.followed__items-inner').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -28,7 +28,7 @@ $(function () {
   });
 
 
-
+//main page s items mixitup!
   var mixer = mixitup('.s__items-inner');
 
 });

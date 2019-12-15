@@ -320,9 +320,9 @@ button{
         .sold-qty{
             color: #0674ec;
             margin-top: 5px;
-            content: '\e82e';
             &::before{
-            font-family: 'Linearicons-Free';
+                font-family: 'Linearicons-Free';
+                content: '\e82e';
         }
     }
 }
