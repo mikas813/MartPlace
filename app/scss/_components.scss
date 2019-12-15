@@ -42,7 +42,7 @@ button{
     }
     .xl__item-image{
         top: 453px;
-        transition: all .5s;
+        transition: all .3s;
         position: relative;
         .xl__item-btns{
             top: 50%;
@@ -88,8 +88,8 @@ button{
         .xl__item-author{
             align-items: center;
             display: flex;
-            .xl__author-name{
-                margin-left: 8px;
+            .xl__item-author-name{
+                margin-left: 10px;
             }
             .xl__item-origin{
                 color: #7347c1;
@@ -194,7 +194,7 @@ button{
     }
     .s__item-image{
         top: 233px;
-        transition: all .5s;
+        transition: all .3s;
         position: relative;
         .s__item-image-btns{
             left: 50%;

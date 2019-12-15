@@ -1,0 +1,40 @@
+.followed__items-wrapper{
+    padding: 120px 0px;
+    background-color: $second-bgc;
+    .followed__items-inner{
+        justify-content: space-between;
+        display: flex;
+        .slick-next,
+        .slick-prev{
+            position: absolute;
+            top: -130px;
+            font-size: 0;
+            background-color: $main-btn-color;
+            width: 60px;
+            height: 45px;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+        }
+        .slick-next{
+            border-bottom-right-radius: 28px;
+            border-top-right-radius: 28px;
+            right: 30px;
+            &::before{
+                content: '\e876';
+            	font-family: 'Linearicons-Free';
+                font-size: 18px;
+            }
+        }
+        .slick-prev{
+            border-bottom-left-radius: 28px;
+            border-top-left-radius: 28px;
+            right: 83px;
+            &::before{
+                content: '\e875';
+            	font-family: 'Linearicons-Free';
+                font-size: 18px;
+            }
+        }
+    }
+}

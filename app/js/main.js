@@ -20,12 +20,11 @@ $(function () {
 
   });
 
-  $('.followed__items').slick({
+  $('.followed__items-inner').slick({
     slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false
-
   });
 
 
