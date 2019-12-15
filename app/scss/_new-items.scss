@@ -41,163 +41,19 @@
                 color: #fff;
             }
         }
+        .mixitup-control-active{
+            background-color: $main-btn-color;
+            color: #fff;
+        }
     }
-    // .items-inner{
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
-    //     .item-inner{
-    //         background-color: #fff;
-    //         max-width: 362px;
-    //         min-height: 530px;
-    //         border-bottom-left-radius: 5px;
-    //         border-bottom-right-radius: 5px;
-    //         margin-bottom: 30px;
-
-    //         .item__background{
-    //             background-color: #009688;
-    //             border-top-left-radius: 5px;
-    //             border-top-right-radius: 5px;
-    //             height: 230px;
-    //             overflow: hidden;
-    //             &:hover{
-    //                 .item-image{
-    //                     top: 0;
-    //                 }
-    //             }
-    //         }
-    //         .midle{
-    //             background-color: #3c6490;
-
-    //         }
-    //     }
-    //     .item-image{
-    //         position: relative;
-    //         top: 233px;
-    //         transition: all .5s;
-    //         .image__btns{
-    //             top: 50%;
-    //             left: 50%;
-    //             transform: translate(-50%, -50%);   
-    //             display: flex;
-    //             position: absolute;
-    //         }
-    //         a{
-    //             width: 130px;
-    //             border-radius: 40px;
-    //             height: 45px;
-    //             border: 1px solid #fff;
-    //             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    //             text-align: center;
-    //             font-size: 15px;
-    //             display: flex;
-    //             align-items: center;
-    //             justify-content: center;
-    //             color: #fff;
-    //             &:hover{
-    //                 color: $main-btn-color;
-    //                 background-color: #fff;
-    //             }
-    //         }
-    //     }    
-    // }
-    // .item-info{
-    //     .item-title{
-    //         margin: 30px 0px 20px 30px;
-    //         font-size: 20px;
-    //     }
-    //     .theme-info{
-    //         display: flex;
-    //         align-items: center;
-    //         margin-left: 30px;
-    //         img{
-    //             margin-right: 10px;
-    //         }
-    //         .theme-name{
-    //             margin-right: 40px;
-    //             color: #000;
-    //         }
-    //         .theme-origin{
-    //             position: relative;
-    //             color: #7347c1;
-    //         }
-    //         .wordpress{
-    //             &::before{
-    //                 content: '';
-    //                 background-image: url(../images/icons/wp.jpg);
-    //                 width: 16px;
-    //                 height: 16px;
-    //                 left: -26px;
-    //                 position: absolute;
-    //             }
-    //         }
-    //         .psd{
-    //             &::before{
-    //                 content: '';
-    //                 background-image: url(../images/icons/psd.jpg);
-    //                 width: 13px;
-    //                 height: 17px;
-    //                 left: -26px;
-    //                 position: absolute;
-    //             }
-    //         }
-    //         .html{
-    //             &::before{
-    //                 content: '';
-    //                 background-image: url(../images/icons/html.jpg);
-    //                 width: 15px;
-    //                 height: 17px;
-    //                 left: -26px;
-    //                 position: absolute;
-    //             }
-    //         }
-    //     }
-    //     .theme-text{
-    //         color: $main-font-color;
-    //         max-width: 300px;
-    //         margin-left: 30px;
-    //         font-size: 16px;
-    //         line-height: 30px;
-    //     }
-
-    // }
-    // .item__bottom-info{
-    //     margin: 60px 30px 30px 30px;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     position: relative;
-    //     &::before{
-    //         content: '';
-    //         border-top: 1px solid #ececec;
-    //         top: -30px;
-    //         position: absolute;
-    //         width: 100%;
-    //     }
-    //     .item__price{
-    //         background-color: #e6f1fd;
-    //         border-radius: 20px;
-    //         color: #0674ec;
-    //         padding: 8px 16px;
-    //     }
-    //     .item-likes{
-    //         margin-left: 25px;
-    //         &::before{
-    //             content: '\e813';
-    //             font-size: 16px;
-    //             color: #7347c1;
-    //         	font-family: 'Linearicons-Free';
-    //         }
-    //     }
-    //     .sold-qty{
-    //         color: #0674ec;
-    //         &::before{
-    //             content: '\e82e';
-    //         	font-family: 'Linearicons-Free';
-
-    //         }
-    //     }
-    // }
+    .s__items-inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
     .items-bottom-btn{
+
         display: flex;
         justify-content: center;
         button{

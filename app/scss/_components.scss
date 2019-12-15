@@ -20,7 +20,7 @@ button{
     }
 }
 
-// XL slider-item
+// START XL item
 .xl__item-inner{
     display: flex;
     flex-wrap: nowrap;
@@ -166,51 +166,44 @@ button{
         }
     }   
 }
-// XL slider-item
-
-
-  .items-inner{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .item-inner{
-            background-color: #fff;
-            max-width: 362px;
-            min-height: 530px;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            margin-bottom: 30px;
-
-            .item__background{
-                background-color: #009688;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                height: 230px;
-                overflow: hidden;
-                &:hover{
-                    .item-image{
-                        top: 0;
-                    }
-                }
-            }
-            .midle{
-                background-color: #3c6490;
-
+// END XL item
+// START S item
+.s__item-inner{
+    background-color: #fff;
+    max-width: 362px;
+    min-height: 530px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 30px;
+    .s__item-background{
+        background-color: #009688;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 230px;
+        overflow: hidden;
+        &:hover{
+            .s__item-image{
+                top: 0;
             }
         }
-        .item-image{
-            position: relative;
-            top: 233px;
-            transition: all .5s;
-            .image__btns{
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);   
-                display: flex;
-                position: absolute;
-            }
+    }
+    //has different backgroun color
+    .s__midlle-item{
+        background-color: #3c6490;
+        color: #fff;
+    }
+    .s__item-image{
+        top: 233px;
+        transition: all .5s;
+        position: relative;
+        .s__item-image-btns{
+            left: 50%;
+            transform: translate(-50%, -50%);   
+            display: flex;
+            position: absolute;
+            top: 50%;
+        }
             a{
-                width: 130px;
                 border-radius: 40px;
                 height: 45px;
                 border: 1px solid #fff;
@@ -221,106 +214,116 @@ button{
                 align-items: center;
                 justify-content: center;
                 color: #fff;
+                width: 130px;
                 &:hover{
-                    color: $main-btn-color;
                     background-color: #fff;
+                    color: $main-btn-color;
+                }
+                & + a{
+                    margin-left: 10px;
                 }
             }
-        }    
-    }
-    .item-info{
-        .item-title{
+        }
+    }    
+    .s__item-info{
+        .s__item-title{
             margin: 30px 0px 20px 30px;
             font-size: 20px;
+            color: #000;
         }
-        .theme-info{
-            display: flex;
+        .s__item-theme-info{
             align-items: center;
             margin-left: 30px;
+            display: flex;
             img{
                 margin-right: 10px;
             }
             .theme-name{
-                margin-right: 40px;
                 color: #000;
+                margin-right: 40px;
             }
             .theme-origin{
-                position: relative;
                 color: #7347c1;
+                position: relative;
             }
             .wordpress{
                 &::before{
-                    content: '';
                     background-image: url(../images/icons/wp.jpg);
                     width: 16px;
                     height: 16px;
                     left: -26px;
                     position: absolute;
+                    content: '';
                 }
             }
             .psd{
                 &::before{
-                    content: '';
                     background-image: url(../images/icons/psd.jpg);
                     width: 13px;
                     height: 17px;
                     left: -26px;
                     position: absolute;
+                    content: '';
                 }
             }
             .html{
                 &::before{
-                    content: '';
                     background-image: url(../images/icons/html.jpg);
                     width: 15px;
                     height: 17px;
                     left: -26px;
                     position: absolute;
+                    content: '';
                 }
             }
         }
-        .theme-text{
-            color: $main-font-color;
+        .s__item-theme-text{
             max-width: 300px;
             margin-left: 30px;
             font-size: 16px;
             line-height: 30px;
+            color: $main-font-color;
         }
-
-    }
-    .item__bottom-info{
+    }   
+    .s__item-bottom-info{
         margin: 60px 30px 30px 30px;
         display: flex;
         justify-content: space-between;
         position: relative;
+        font-size: 15px;
         &::before{
-            content: '';
             border-top: 1px solid #ececec;
             top: -30px;
             position: absolute;
             width: 100%;
+            content: '';
         }
-        .item__price{
-            background-color: #e6f1fd;
+        .item-price{
             border-radius: 20px;
             color: #0674ec;
             padding: 8px 16px;
+            background-color: #e6f1fd;
         }
         .item-likes{
-            margin-left: 25px;
+            margin-left: 10px;
             &::before{
-                content: '\e813';
                 font-size: 16px;
                 color: #7347c1;
-            	font-family: 'Linearicons-Free';
+                font-family: 'Linearicons-Free';
+                content: '\e813';
             }
+        }
+        .rate-star{
+            display: inline-block;
+            margin-top: 7px;
         }
         .sold-qty{
             color: #0674ec;
+            margin-top: 5px;
+            content: '\e82e';
             &::before{
-                content: '\e82e';
-            	font-family: 'Linearicons-Free';
-
-            }
+            font-family: 'Linearicons-Free';
         }
     }
+}
+//END S item

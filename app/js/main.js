@@ -1,9 +1,9 @@
 $(function () {
  //add an 'id='rateYo' 
   $(".rate-star").rateYo({
-      starWidth: "15px",
+      starWidth: "14px",
       readOnly: true,
-      rating: 4.5
+      rating: 5
   });
  
   //top main-page title slider!
