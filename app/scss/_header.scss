@@ -48,8 +48,8 @@
                 &::before{
                     color: #8596a6;
                     position: absolute;
-                    content: '\e951';
-                    font-family: 'icomoon';
+                    content: '\e858';
+                	font-family: 'Linearicons-Free';
                     font-size: 18px;
                     top: 12px;
                     right: 14px;
@@ -61,8 +61,8 @@
                     position: absolute;
                     color: #8596a6;
 
-                    content: '\e945';
-                    font-family: 'icomoon';
+                    content: '\e818';
+                	font-family: 'Linearicons-Free';
                     font-size: 18px;
                     top: 13px;
                     right: 21px;
@@ -73,8 +73,8 @@
                 &::before{
                     color: #8596a6;
                     position: absolute;
-                    content: '\e93a';
-                    font-family: 'icomoon';
+                    content: '\e82e';
+                	font-family: 'Linearicons-Free';
                     font-size: 18px;
                     top: 13px;
                     right: 20px;
@@ -147,8 +147,9 @@
             position: absolute;
             height: 45px;
             &::before{                   
-                content: "\e986";
-                font-family: 'icomoon';
+                content: "\e86f";
+                	font-family: 'Linearicons-Free';
+
                 font-size: 18px;   
             }
         }

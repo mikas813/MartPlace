@@ -5,7 +5,7 @@
         .slick-next,
         .slick-prev{
             position: absolute;
-            top: -120px;
+            top: -130px;
             font-size: 0;
             background-color: #7347c1;
             width: 60px;
@@ -19,8 +19,8 @@
             border-top-right-radius: 28px;
             right: 30px;
             &::before{
-                content: '\e900';
-                font-family: 'icomoon';
+                content: '\e876';
+            	font-family: 'Linearicons-Free';
                 font-size: 18px;
             }
 
@@ -30,156 +30,11 @@
             border-top-left-radius: 28px;
             right: 83px;
             &::before{
-                content: '\e904';
-                font-family: 'icomoon';
+                content: '\e875';
+            	font-family: 'Linearicons-Free';
                 font-size: 18px;
             }
 
-        }
-
-        .featured__slider-topbar {
-            background-color: #fff;
-            margin-bottom: 50px;
-            min-height: 110px;
-            border-radius: 4px;
-            width: 100%;
-            box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-            display: flex;
-            align-items: center;
-            position: relative;
-            &-title{
-                font-size: 30px;
-                padding: 0px 165px 0 30px;
-            }
-        }
-        .featured__slider-item-inner {
-            display: flex;
-            flex-wrap: nowrap;
-            .featured__image {
-                position: relative;
-                .image__btns{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);   
-                    display: flex;
-                }
-                a{
-                    color: #fff;
-                    width: 130px;
-                    border-radius: 40px;
-                    height: 45px;
-                    border: 1px solid #fff;
-                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-                    text-align: center;
-                    font-size: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    &:hover{
-                        background-color: #fff;
-                        color: $main-btn-color;
-                    }
-                }
-                a + a{
-                    margin-left: 10px;
-                }
-
-            }
-            .featured__info {
-                max-width: 586px;
-                max-height: 450px;
-                background-color: #fff;
-                border-bottom-right-radius: 4px;
-                border-top-right-radius: 4px;
-                padding: 25px 65px 20px 30px;
-                .featured__slider-item-title{
-                    line-height: 0;
-                    font-size: 24px;
-                    font-weight: 400;
-                    color: #000;
-                }
-                .item__author{
-                    display: flex;
-                    align-items: center;
-                    .author__name{
-                        margin-left: 8px;
-                    }
-                    .item__origin{
-                        margin-left: 42px;
-                        color: #7347c1;
-                        position: relative;
-                        &::before{
-                            content: '';
-                            background-image: url(../images/icons/wordpress-icon.png);
-                            width: 16px;
-                            height: 16px;
-                            position: absolute;
-                            left: -27px;
-                            top: 1px;
-                        }
-                    }
-                }
-                .item__text{
-                    font-size: 16px;
-                    line-height: 30px;
-                }
-                .item__type{
-                    padding: 30px 0px 45px;
-                    border-bottom: 1px solid #ececec;
-                    span{
-                        background-color: #f1f3f6;
-                        padding: 10px 10px 10px 18px;
-                        border-radius: 20px;
-                        & + span{
-                            margin-left: 8px;
-                        }
-                    }
-                    
-                }
-            .item__bottom-info{
-                margin-top: 25px;
-                display: flex;
-                justify-content: space-between;
-                .left__info{
-                    display: flex;
-                    align-items: center;
-                    button{
-                        padding: 8px 20px;
-                        border-radius: 30px;
-                    }
-                    .item__likes{
-                        position: relative;
-                        margin-left: 42px;
-                        &::before{
-                            content: '\e9da';
-                            font-family: 'icomoon';
-                            position: absolute;
-                            font-size: 16px;
-                            color: $main-btn-color;
-                            left: -20px;
-                        }
-                    }
-                    .sold__qty{
-                        margin-left: 40px;
-                        position: relative;
-                        &::before{
-                            content: '\e93a';
-                            font-family: 'icomoon';
-                            position: absolute;
-                            font-size: 16px;
-                            color: $main-btn-color;
-                            left: -20px;
-                        }
-                    }
-                }
-                .right__info{
-                    display: flex;
-                    align-items: center;
-                }
-            }
-
-            }
         }
     }  
 }

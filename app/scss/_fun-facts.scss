@@ -1,0 +1,71 @@
+.fun__facts{
+    background-color: #212225;
+
+}
+
+.fun__facts-inner{
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+    span{
+        color: #fff;
+        display: block;
+        font-size: 16px;
+    }
+    .items{
+        position: relative;
+        color: #feb71d;
+        &::before{
+            content: '\e84c';
+            font-family: 'Linearicons-Free';
+            top: -78px;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+
+        }
+    }
+    .sales{
+        position: relative;
+        color: #58c9e9;
+        &::before{
+            content: '\e80b';
+            font-family: 'Linearicons-Free';
+            top: -78px;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+
+        }
+    }
+    .customers{
+        position: relative;
+        color: #77de51;
+        &::before{
+            content: '\e854';
+            font-family: 'Linearicons-Free';
+            top: -78px;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+
+        }
+    }
+    .members{
+        position: relative;
+        color: #ff6a6d;
+        &::before{
+            content: '\e82b';
+            font-family: 'Linearicons-Free';
+            top: -78px;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+
+        }
+    }
+}

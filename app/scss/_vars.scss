@@ -17,17 +17,13 @@ $main-font-size: 1em;
 
 //Background-colors
 $main-bgc: #eef1f3; //used for 'header and some containers,
+$second-bgc: #eff1f5; //used for some containers,
+
 $secondary-bgc: #ffffff;
 $search-sect-bgc: #0674ec;
 $footer-bgc: #262b30;
 $copy-bgc: #192027;
 
 //mixins
-    //color gradient for slider and baner
-@mixin color-gradient { 
-    background-image: -moz-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
-    background-image: -ms-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
-    background-image: -webkit-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
-    opacity: 0.902; 
-}
+
 
