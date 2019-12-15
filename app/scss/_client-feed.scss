@@ -1,0 +1,53 @@
+.client__feedback{
+    background-color: #fff;
+    .feedback__items-inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        .feedback__item{
+            max-width: 555px;
+            min-height: 315px;
+            border-left: 2px solid #0674ec;
+            padding: 50px 35px;
+            box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+            margin-top: 50px;
+            .feed__user-info{
+               display: flex;
+               align-items: center;
+            }
+            .user-info{
+                margin-left: 20px;
+                position: relative;
+                &::before{
+                    content: '\e83f';
+                	font-family: 'Linearicons-Free';
+                    font-size: 60px;
+                    color: #e8e8e8;    
+                    right: -223px;
+                    top: -13px;
+                    position: absolute;
+                }
+                .user-name{
+                    color: #000;
+                }
+                .user-prof{
+                    color: $main-font-color;
+                    margin-top: 15px;
+                }
+            }
+            .feedback-text{
+                line-height: 30px;
+            }
+        }
+    }
+    .feedback__items-bottom-btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+        button{
+            padding: 20px 28px;
+            border-radius: 50px;
+        }
+    }
+}
+

@@ -327,3 +327,25 @@ button{
     }
 }
 //END S item
+//Some sections title and subtitle styles
+.items__top-info{
+    text-align: center;
+    margin-top: 100px;
+    .items__top-title{
+        font-size: 36px;
+        line-height: 72px;
+        margin: 0;
+        color: #000;
+        font-weight: 400;
+        span{
+            color: #0674ec;
+        }
+    }
+    .items__top-text{
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 30px;
+    }
+}
+//Some sections title and subtitle styles
+
