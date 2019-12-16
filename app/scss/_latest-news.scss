@@ -1,0 +1,68 @@
+.latest__news{
+    background-color: $second-bgc;
+    padding: 0px 0px 120px ;
+    .latest__news-items-inner{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        .latest__news-item-inner{
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+            max-width: 361px;
+            min-height: 480px;
+            .latest__news-item-info{
+                padding: 30px;
+                text-align: center;
+                .latest__news-item-title{
+                    font-size: 22px;
+                    color: #000;
+                    margin: 0;
+                }
+                .latest__news-item-text{
+                    line-height: 30px;
+                }
+            }
+            .latest__news-item-bottom-info{
+                display: flex;
+                justify-content: space-around;
+                .left-info{
+                    color: #999999;
+                    position: relative;
+                    &::before{
+                        content: '\e864';
+                    	font-family: 'Linearicons-Free';
+                        position: absolute;
+                        color: #0674ec;
+                        left: -21px;
+                    }
+                    
+                }
+                .right-info{
+                    display: flex;
+                    div{
+                        position: relative;
+                        & + div{
+                            margin-left: 55px;
+                        }
+                        &::before{
+                            font-family: 'Linearicons-Free';
+                            position: absolute;
+                            color: #0674ec;
+                            left: -22px;
+                        }
+                    }
+                    .coments{
+                        &::before{
+                        	content: "\e83f";
+                        }
+                    }
+                    .views{
+                        &::before{
+	                        content: "\e81b";
+                        } 
+                    }
+                }
+            }
+        }
+    }   
+}
