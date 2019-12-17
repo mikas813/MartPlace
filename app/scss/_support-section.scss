@@ -1,12 +1,24 @@
 .support__sect-wrapper{
     display: flex;
     justify-content: space-around;
-    padding: 60px 0px;
     text-align: center;
     font-size: 24px;
+    min-height: 300px;
     color: #000;
+    .support__wrapper{
+        width: 100%;
+        img{
+        margin-top: 65px;
+        }
+    }
+    .right__wrapper{
+        border-left: 1px solid #e8eaf3;
+        span{
+            color: #7347c1;
+        }
+    }
     h4{
-        font-weight: 400;
+        font-weight: 300;
     }
     span{
         color: #0674ec;
