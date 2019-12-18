@@ -1,11 +1,71 @@
 .sell-buy__section{
     display: flex;
-    .sell__box{
-        min-width: 50%;
-        background-image: url(../images/sell-box-bg.jpg);
-    }
-    .buy__box{
-        min-width: 50%;
-        background-image: url(../images/buy-box-bg.jpg);
+    justify-content: center;
+    .sell-buy__wrapper{
+        width: 100%;
+        max-width: 1920px;
+        display: flex;
+        justify-content: center;
+        .sell-buy__inner{
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            width: 100%;
+            min-height: 560px;
+            h4{
+                line-height: 72px;
+                margin-top: 220px;
+                font-size: 36px;
+                font-weight: 300;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -130px;
+                    transform: translate(-50%);
+                    left: 50%;
+                }
+            }
+        }
+        .sell__box{
+            background-image: url(../images/sell-box-bg.jpg);
+            background-position-x: 99%;
+            h4{
+                &::before{
+                    background-image: url(../images/icons/sell-icon.png);
+                    width: 120px;
+                    height: 100px;
+                }
+            }
+        }
+        .buy__box{
+            background-image: url(../images/buy-box-bg.jpg);   
+            h4{
+                &::before{
+                    background-image: url(../images/icons/buy-icon.png);
+                    width: 100px;
+                    height: 100px;
+                }
+            }           
+            button{
+                color: #7347c1;
+            }
+        }
+        h4,p{
+            max-width: 620px;
+            color: #fff;
+            margin: 0 auto;
+            }
+        p{
+            font-size: 16px;
+            line-height: 30px;
+        }
+        button{
+            margin-top: 45px;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #0674ec;
+            border-radius: 40px;
+        }
     }
 }
