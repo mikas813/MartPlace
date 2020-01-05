@@ -9,6 +9,7 @@ $main-font-color: #555555;
 $footer-font-color: #ababab;
 $main-title-color: #000000;
 $header-menu-fc: #303030;
+$blue-font: #0674ec;
 
 //font sizes
 $main-font-size: 1em;
@@ -19,13 +20,58 @@ $main-font-size: 1em;
 $main-bgc: #eef1f3; //used for 'header and some containers,
 $second-bgc: #eff1f5; //used for some containers,
 
+
+
 $footer-copy-bgc: #192027; //footer copy section background-color
 
 $secondary-bgc: #ffffff;
 $search-sect-bgc: #0674ec;
 $footer-bgc: #262b30;
 $copy-bgc: #192027;
-
+$border-color: #e8ebf0;
 //mixins
 
-
+//Hover menu mixin (used for header top hover lists and bottom hover dropdown lists)
+@mixin dropdown-main-opt { 
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    transition: visibility ease .3s, opacity ease 1s;
+    border-top: 1px solid #0674ec;
+    background-color: #fff;
+    position: absolute;
+    visibility: hidden;
+    padding: 20px 20px 20px 25px;
+    opacity: 0;                
+    z-index: 1;
+} 
+//Header bottom dropdown list position (used only for bottom lists)
+@mixin dropdown-list-position {
+    position: absolute;
+    min-width: 270px;
+    top: 47px;   
+}
+//Hover menu top border triangle (only for header)
+@mixin top-border-triangle {
+    background-image: url(../images/icons/triangle.png);
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    content: '';  
+    right: 30px;
+    top: -12px;  
+}
+//Bottom menu hover list item options
+@mixin hov-menu-list-item-opt {
+    width: 100%;
+    padding: 15px 10px;
+    text-transform: none;
+    border-radius: 3px;
+    &:hover{
+        background-color: $main-btn-color;
+        color: #fff;
+    }
+}
+//On hover aperence
+@mixin hover-menu-aperence {
+    visibility: visible;
+    opacity: 1;
+}

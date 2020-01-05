@@ -6,7 +6,7 @@ html{
 *::after{
     box-sizing: inherit;
 }
-// footer bottom options
+//footer bottom options
 * {
 	margin: 0;
 	padding: 0;
@@ -26,7 +26,7 @@ body {
 .footer {
 	flex: 0 0 auto;
 }
-// footer bottom options
+//footer bottom options
 ul,
 li{
     margin: 0;
@@ -35,13 +35,10 @@ li{
 }
 
 button{
-    outline: none;
     cursor: pointer;
     
 }
-input{
-    outline: none;
-}
+
 menu{
     padding: 0;
 }
