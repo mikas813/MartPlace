@@ -1,3 +1,5 @@
+// $(document).ready(function () {
+
 $(function () {
  //add an 'id='rateYo' 
   $(".rate-star").rateYo({
@@ -28,7 +30,53 @@ $(function () {
   });
 
 
-//main page s items mixitup!
-  var mixer = mixitup('.s__items-inner');
+  
+  //Mobile menu rows
+  $('.user-mob').click(function () {
+    $('.header__top-content-right').toggleClass('active'); //change
+    // $('.header__top-content-right--inner').toggle();
+  });
+  
+  $('.mob-men-row').click(function () {
+  $(this).toggleClass('active'); //make midle row transparent and move bottom and top rows maikin X!
+  $('.header__navigation').toggleClass('active');
+  });
 
+
+
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 350,
+    from: 30,
+    to: 300,
+    prefix: '$'
+  });
+
+  /* Javascript */
+
+
+    $(".rateYo").rateYo({
+      starWidth: "18px"
+    });
+
+    
+    $('.list-btn').click( function() {
+      $(this).attr('class', 'list-btn-active');
+      $('.grid-btn-active').attr('class', 'grid-btn');
+      $('.grid__item').toggle();
+      $('.list__item-inner').toggle();
+    });
+
+    $('.grid-btn-active').click( function() {
+      $(this).attr('class', 'grid-btn-active');
+      $('.list-btn-active').attr('class', 'list-btn');
+      $('.list__item-inner').toggle();
+      $('.grid__item').toggle();
+    });
+    
+    
+  //main page s items mixitup! hat to be lovated always at the bottom of main.js IMPORTANT
+//   var mixer = mixitup('.s__items-inner');
 });
+
