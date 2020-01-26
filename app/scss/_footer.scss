@@ -21,6 +21,9 @@
             line-height: 36px;
             color: #fff;
         } 
+        @media (max-width: 1000px) {
+            flex-wrap: wrap;
+        }
     }
     .info{
         li{
@@ -53,6 +56,9 @@
                 top: 10px;                
             }
         }
+        @media (max-width: 426px) {
+            margin-bottom: 20px;
+        }
     }
     .newsletter{
        .footer__input{
@@ -74,6 +80,9 @@
                 padding: 14px 30px;
                 font-size: 15px;
             } 
+        }
+        @media (max-width: 538px) {
+            margin-top: 20px;
         }
         a{
             position: relative;

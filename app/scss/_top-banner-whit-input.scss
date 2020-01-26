@@ -1,0 +1,49 @@
+.top__banner-inp{
+    background: rgb(103,30,144);
+    background: linear-gradient(90deg, rgba(103,30,144,1) 0%, rgba(12,55,218,1) 100%);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    padding: 60px 0px 30px;
+    align-items: center;
+    .top__banner-top-title{
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        margin: 0;
+        line-height: 2;
+    }
+    .top__banner-input{
+        margin: 20px auto 20px;
+        position: relative;
+        max-width: 560px;
+        input{
+            width: 100%;
+            border-radius: 40px;
+            padding: 0px 80px 0px 25px;
+            border: 1px solid #909090;
+            height: 55px;
+        }
+        
+        button{
+            width: 110px;
+            border: 1px solid #909090;
+            right: 0;
+            border-radius: 40px;
+            position: absolute;
+            height: 55px;
+        }
+    }
+    .breadcrumbs{
+        padding-top: 30px;
+        a{
+            &::after{
+                content: '/';
+                margin: 0 5px 0 11px;
+            }
+        }
+        span{
+            color: #bfcad7;
+        }
+    }
+}
