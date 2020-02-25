@@ -367,13 +367,74 @@ button{
     z-index: 1;
     padding: 20px;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-    // &::before{
-    //     content: '';
-    //     background-image: url(../images/icons/triangle.png);
-    //     height: 12px;
-    //     top: -12px;
-    //     width: 18px;
-    //     position: absolute;
-    //     right: 30px;
-    // }
+}
+.social-icons {
+    a {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        &::before {
+            color: #fff;
+            font-family: 'icomoon';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+        & + a {
+            margin-left: 14px;
+        }
+    }
+
+    .facebook {
+        margin-left: 20px;
+        background-color: #395799;
+
+        &::before {
+            content: "\f099";
+        }
+    }
+
+    .twitter {
+        background-color: #19b2f5;
+
+        &::before {
+            content: "\f0d2";
+        }
+    }
+
+    .google {
+        background-color: #f05b44;
+
+        &::before {
+            content: "\f0e1";
+        }
+    }
+
+    .pinteres {
+        background-color: #9c0c1c;
+
+        &::before {
+            content: "\f1a0";
+        }
+    }
+
+    .linkedin {
+        background-color: #0da6be;
+
+        &::before {
+            content: "\f230";
+        }
+    }
+
+    .dribbble {
+        background-color: #ea4c89;
+
+        &::before {
+            content: "\eaa7";
+        }
+    }
 }

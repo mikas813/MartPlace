@@ -1,0 +1,10 @@
+.favorite__items{
+    background-color: $main-bgc;
+    padding: 80px 0px 120px;
+    .favorite__items-inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}

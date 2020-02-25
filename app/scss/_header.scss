@@ -455,6 +455,7 @@
         .user__info{
             display: flex;
             img{
+                height: 50px;
                 @media (max-width: 475px) {
                     display: none;
                 }
