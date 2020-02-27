@@ -3,18 +3,24 @@
     background: linear-gradient(90deg, rgba(103,30,144,1) 0%, rgba(12,55,218,1) 100%);
     color: #fff;
     display: flex;
-    padding: 60px 0px 60px;
+    padding: 50px 0px;
     align-items: center;
     text-align: left;
+    @media (max-width: 1130px) {
+        padding: 30px 0;
+    }
     .top__banner-title{
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 400;
         letter-spacing: 3px;
         margin: 0;
-        line-height: 2;
+        line-height: 1.5;
+        @media (max-width: 640px) {
+            font-size: 28px;
+        }
     }
     .breadcrumbs{
-        padding-top: 30px;
+        padding-bottom: 15px;
         a{
             &::after{
                 content: '/';

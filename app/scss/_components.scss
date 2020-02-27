@@ -438,3 +438,100 @@ button{
         }
     }
 }
+.popup{
+    background-color: $second-bgc;
+    padding: 70px 0px 120px;
+}
+.form-inner{
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+    max-width: 660px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Quicksand';
+    .top-content{
+        border-bottom: 1px solid $border-color;
+        padding: 60px 45px 30px;
+        h4{
+            font-size: 26px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        p{
+            line-height: 2;
+            color: $main-font-color;
+        }
+    }
+    .bottom-content{
+        form{
+            text-align: left;
+            padding: 30px 50px 60px;
+            @media (max-width: 640px) {
+                padding: 15px 25px 30px;
+            }
+        }
+        div{
+            label{
+                display: block;
+                font-weight: 800;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                padding: 20px;
+                border: none;
+                background-color: $second-bgc;
+                margin-bottom: 30px;
+                @media (max-width: 640px) {
+                    padding: 10px;
+                }
+            }
+        }
+        input[type=checkbox]{
+            display: none;
+        }
+        input[type=checkbox] + label:before {
+            content: "\2713";
+            color: blue;
+            display: inline-block;
+            border: none;
+            border-radius: 50%;
+            background-color: blue;
+            font-size: 17px;
+            line-height: 1;
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            text-align: center;
+            transition: color ease .3s;
+        }
+
+        input[type=checkbox]:checked + label:before {
+            color: #fff;
+        }
+        button{
+            margin: 20px 0 0px;
+            padding: 15px 50px;
+            display: block;
+            border-radius: 30px;
+        }
+
+        .bottom-text{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 18px;
+            color: #898f96;
+            @media (max-width: 640px) {
+                font-size: 16px;
+                p{
+                    margin-bottom: 10px;
+                }
+            }
+            a{
+                color: $blue-font;
+                margin-top: 40px;
+            }
+        }
+    }
+}
